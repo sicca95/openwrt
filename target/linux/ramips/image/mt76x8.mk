@@ -247,6 +247,15 @@ define Device/jotale_js76x8-32m
 endef
 TARGET_DEVICES += jotale_js76x8-32m
 
+define Device/kuwfi_cpe70r
+  IMAGE_SIZE := 7808k
+  DEVICE_VENDOR := KuWFI
+  DEVICE_MODEL := CPE70R
+  DEVICE_VARIANT := v1
+  DEVICE_PACKAGES := kmod-mt76x0e
+endef
+TARGET_DEVICES += kuwfi_cpe70r
+
 define Device/mediatek_linkit-smart-7688
   IMAGE_SIZE := 32448k
   DEVICE_VENDOR := MediaTek
@@ -887,3 +896,4 @@ define Device/zyxel_keenetic-extra-ii
 	check-size | zyimage -d 6162 -v "ZyXEL Keenetic Extra II"
 endef
 TARGET_DEVICES += zyxel_keenetic-extra-ii
+
