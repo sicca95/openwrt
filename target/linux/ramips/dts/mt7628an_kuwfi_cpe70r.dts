@@ -43,16 +43,16 @@
 	leds {
 		compatible = "gpio-leds";
 
-		wifi-high {
-			label = "blue:wifi-high";
+		led_power: power {
+			label = "green:power";
 			gpios = <&gpio 37 GPIO_ACTIVE_LOW>;
 	};
 
 		lan {
-			label = "blue:lan";
+			label = "green:lan";
 			gpios = <&gpio 2 GPIO_ACTIVE_LOW>;
-		};
-
+        };
+    };
 };
 
 &state_default {
